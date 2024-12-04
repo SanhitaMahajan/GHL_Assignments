@@ -15,5 +15,9 @@ export class HomePage{
     async validateNavbar() {
         await expect(this.page.locator('nav')).toBeVisible(); // Check navbar is present
     }
+
+    async validateTitle(){
+        await expect(this.page).toHaveTitle('STORE');
+    }
         
 }

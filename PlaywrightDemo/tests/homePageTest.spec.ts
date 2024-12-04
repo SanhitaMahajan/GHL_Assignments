@@ -26,13 +26,9 @@ test.describe('Home page functionality', () => {
         await homePage.validateNavbar();
     });
 
-    
+    test('should have title store', async() =>{
+        await homePage.validateTitle();
+    })
 
-    // test('Validate Homepage', async ({ page }) => {
-    //     await page.goto('https://www.demoblaze.com/#');
-    //     await expect(page).toHaveTitle('STORE');
-    //     await expect(page.locator('nav')).toBeVisible(); // Check navbar is present
-    //     await expect(page.locator('div#carouselExampleIndicators')).toBeVisible(); // Check carousel is visible
-    // });
    
 });
